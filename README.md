@@ -1,16 +1,8 @@
-# counter
+# App01
+## A re-implementation of the default counter
+This re-implements the default counter taking into notice:
+* The code logic should live in a separate `src/` folder
+* The point of entry(here: main.dart) should just contain the MaterialApp
 
-Default counter app, re-written
-
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://flutter.io/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.io/docs/cookbook)
-
-For help getting started with Flutter, view our 
-[online documentation](https://flutter.io/docs), which offers tutorials, 
-samples, guidance on mobile development, and a full API reference.
+MyApp will be stateless usually. But for the sake of i18n or multiple user authentication levels,
+It will need to become Stateful and will need to pass its state down the widget tree using InheritedWidgets and ScopedModels.
